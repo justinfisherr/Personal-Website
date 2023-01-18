@@ -830,11 +830,13 @@ textarea {
     display: none;
   }
   .nav-item {
+    margin-inline: 0px;
     padding: 0px;
     margin-block: 4px;
     text-transform: lowercase;
   }
   .resume-button {
+    margin-inline: 0px;
     width: 20%;
   }
   .main-container {
