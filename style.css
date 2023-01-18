@@ -472,6 +472,7 @@ p {
   left: 9px;
   animation: blink 0.5s infinite;
 }
+
 .type-box-container:focus .cursor {
   display: block;
 }
@@ -766,6 +767,9 @@ textarea {
 }
 
 @media (max-width: 900px) {
+  .cursor {
+    display: block;
+  }
   .tech,
   .tech-r {
     justify-content: start;

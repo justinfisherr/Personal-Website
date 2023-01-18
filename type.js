@@ -112,7 +112,8 @@ function gameOver(elapsedTime = 30) {
   document.querySelector(".info").innerHTML = `WPM: ${result}`;
 }
 typeContainer.addEventListener("focusout", () => {
-  newGame();
+  const mobile = window.innerWidth < 900;
+  if (!mobile) newGame();
 });
 removed = false;
 typeContainer.addEventListener("keydown", (e) => {
@@ -121,6 +122,8 @@ typeContainer.addEventListener("keydown", (e) => {
     removed = true;
   }
   const key = e.key;
+  const mobile = window.innerWidth < 900;
+
   const currentWord = document.querySelector(".word.current");
   const currentLetter = document.querySelector(".letter.current");
   const expected = currentLetter?.innerHTML || " ";
@@ -136,7 +139,7 @@ typeContainer.addEventListener("keydown", (e) => {
   const isUtility =
     key === "Backspace" || key === "Shift" || key === "CapsLock";
   const isGameOver = wordsContainer.classList.contains("over");
-  if (isSpace) e.preventDefault();
+  if (isSpace && !mobile) e.preventDefault();
   if (!isGameOver) {
     if (!window.timer && isLetter) {
       window.timer = setInterval(() => {
