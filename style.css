@@ -6,16 +6,16 @@
   --color-350: #a4afba;
   --color-400: #cfdde9;
   --acsent: #00e5ff;
-  /* --start-000: 3900ms;
+  --start-000: 3900ms;
   --start-050: 3950ms;
   --start-100: 4000ms;
   --start-200: 4100ms;
-  --start-300: 4200ms; */
-  --start-000: 0ms;
+  --start-300: 4200ms;
+  /* --start-000: 0ms;
   --start-050: 0ms;
   --start-100: 0ms;
   --start-200: 0ms;
-  --start-300: 0ms;
+  --start-300: 0ms; */
 }
 
 * {
