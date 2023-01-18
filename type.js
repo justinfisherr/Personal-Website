@@ -123,7 +123,8 @@ invsibleInput.addEventListener("focusout", () => {
 });
 
 typeContainer.addEventListener("focusout", () => {
-  newGame();
+  const mobile = window.innerWidth < 900;
+  if (!mobile) newGame();
 });
 
 removed = false;
