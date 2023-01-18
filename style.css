@@ -623,6 +623,11 @@ textarea {
   margin-bottom: 20px;
   width: fit-content;
 }
+.contact-email {
+  color: var(--color-350);
+  margin-top: 5px;
+  font-size: 15px;
+}
 .hover:hover {
   color: var(--acsent);
   transition: all 0.25s;
