@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="inactive">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="animation.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nav-bar">
+        <div class="logo-wrapper">
+          <img src="./resources/type.gif" alt="" class="logo logo-intro" />
+          <img src="./resources/js.gif" alt="" class="logo logo-general" />
+        </div>
+        <div class="hamburger-wrapper hide-nav">
+          <img class="hamburger" src="./resources/bars.svg" />
+        </div>
+        <div class="nav-items hide-nav">
+          <li class="nav-item hover"><span class="carrot">></span> About</li>
+          <li class="nav-item hover"><span class="carrot">></span> Projects</li>
+          <li class="nav-item hover"><span class="carrot">></span> Skills</li>
+          <li class="nav-item hover"><span class="carrot">></span> Contact</li>
+          <input class="resume-button" type="submit" value="Resume" />
+        </div>
+        <div class="links hide-nav">
+          <div class="nav-link-wrap github icon-link">
+            <img class="nav-link" src="./resources/github-mark.svg" alt="" />
+          </div>
+          <div class="nav-link-wrap linked-in icon-link">
+            <img
+              class="nav-link"
+              src="./resources/iconmonstr-linkedin-3.svg"
+              fill="currentColor"
+              alt=""
+            />
+          </div>
+          <div class="nav-link-wrap email icon-link">
+            <img
+              class="nav-link"
+              src="./resources/email-svgrepo-com.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="nav-line-container hide-nav">
+          <div class="line border-line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="content flexbox-item">
+        <section class="about-me section hidden bar-hidden">
+          <h1>About()</h1> 
+            <div class="about type-box-container" tabindex="0">
+              <div class="options">
+                <div class="info">60</div>
+                <div class="new-game-button game-button" tabindex="0">reset</div>
+              </div>
+            <div class="cursor-wrapper">
+              <div class="cursor"></div>
+            </div>
+            <div class="word-box"></div>
+            <div class="test">
+              <div class="widget">Start Typing!</div>
+              <div class="arrow">
+                <img src="./resources/arrow.svg" class="arrow-img" alt="">
+              </div>
+            </div>
+          <script src="type.js"></script>
+      </section>
+
+        <section class="resume section">
+          <div class="timeline-wrapper education">
+            <h3 class="hidden">My Education</h3>
+            <div class="timeline-item school-item hidden">
+              <h4>Cal State University, Long Beach</h4>
+              <div class="subtext">
+                <p>Bachelor of Science in Computer Science | 2022-Present</p>
+                <p>
+                  <b>Relevant Coursework:</b> Algorithms, Discrete Mathematics
+                  with Applications to Computer Science, System Programming,
+                  Computer Architecture.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item school-item hidden">
+              <h4>Orange Coast College</h4>
+              <div class="subtext">
+                <p>Associate of Science in Computer Science | 2020-2022</p>
+                <p>
+                  <b>Relevant Coursework:</b> Java Programming, C++ Programming,
+                  C++ Programming 2, Computer Architecture, Data Structures,
+                  Discrete Structures.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item school-item hidden">
+              <h4>C++ Certificite</h4>
+              <div class="subtext">
+                <p>Orange Coast College | 2019</p>
+                <p>
+                  <b>Relevant Coursework:</b> C++ Programming, C++ Programming
+                  2, Data Structure in C++.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-wrapper expereince">
+            <h3 class="hidden">My Expereince</h3>
+            <div class="timeline-item work-items hidden">
+              <h4>Instructional Student Assistant</h4>
+              <div class="subtext">
+                <p>Cal State University, Long Beach | 2023-Present</p>
+                <p>
+                  <b>Responsibilities:</b> Grade exams, small scale projects,
+                  and proctor exams. Conduct office hours to help assist
+                  students with course materials including: C++, Linux, and
+                  algorithms.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item work-items hidden">
+              <h4>Wedding Photographer</h4>
+              <div class="subtext">
+                <p>Martin Fisher Photography, Costa Mesa | Self-Employed</p>
+                <p>
+                  <b>Responsibilities:</b> Operate small scale business, manage
+                  day-of employees, create and manage website, read data to
+                  properly market towards target audience, and take photos of
+                  weddings.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="download-wrapper hidden">
+            <input class="download-button" type="submit" value="RESUME" />
+          </div>
+        </section>
+        <section class="project-section">
+          <h1 class="hidden">My Projects()</h1>
+          <div class="project first-project hidden">
+            <div class="project-image-wrapper">
+              <img
+                src="./resources/listening-screen-2.JPG"
+                alt=""
+                class="project-image"
+              />
+            </div>
+            <div class="project-description">
+              <p class="featured-project">Featured Project</p>
+              <h3 class="project-title">Listening Lobby</h3>
+              <div class="text-box">
+                <p class="project-p">
+                  Allows Spotify and Apple users to listen to along to their
+                  favorite music through our cross platform web application.
+                  Built with Spotify and Apple Music's api.
+                </p>
+              </div>
+              <div class="tech">
+                <p class="tech-p">Node.js</p>
+                <p class="tech-p">Socket.io</p>
+                <p class="tech-p">React</p>
+              </div>
+              <div class="project-link">
+                <a href="https://github.com" target="blank">
+                  <img
+                    src="./resources/github-mark.svg"
+                    alt=""
+                    class="project-icon icon-link"
+                  />
+                </a>
+                <a href="https://github.com" target="blank">
+                  <img
+                    src="./resources/linka.svg"
+                    alt=""
+                    class="project-icon icon-link"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project mobile-project hidden-left">
+            <div class="project-description-r mobile-description">
+              <p class="featured-project">Featured Project</p>
+              <h3 class="project-title">Blur Bar</h3>
+              <div class="text-box mobile-text-box">
+                <p class="project-p mobile-p">
+                  A Google Chrome Extention that allows users to insert an
+                  adjustable Blur Bar into Youtube's video player to hide
+                  embedded subtitles. Verbose settings and controls with 200+
+                  installs.
+                </p>
+              </div>
+              <div class="tech-r mobile-tech-p">
+                <p class="tech-p-r">jQuery</p>
+                <p class="tech-p-r">chrome.storage</p>
+                <p class="tech-p-r">CSS</p>
+              </div>
+              <div class="project-link-r">
+                <a href="https://github.com" target="blank">
+                  <img
+                    src="./resources/github-mark.svg"
+                    alt=""
+                    class="project-icon-r icon-link mobile-project-icon"
+                  />
+                </a>
+                <a href="https://github.com" target="blank">
+                  <img
+                    src="./resources/linka.svg"
+                    alt=""
+                    class="project-icon icon-link"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="project-image-wrapper-r mobile-project-image-wrapper">
+              <img
+                src="./resources/Blur-Bar-1.png"
+                alt=""
+                class="project-image mobile-project-image"
+              />
+            </div>
+          </div>
+          <div class="project hidden">
+            <div class="project-image-wrapper last-project-img-wrapper">
+              <img
+                src="./resources/martin-fisher.JPG"
+                alt=""
+                class="project-image last-project-img"
+              />
+            </div>
+            <div class="project-description last-project-desc">
+              <p class="featured-project">Featured Project</p>
+              <h3 class="project-title last-project">
+                Martin Fisher <br />Photography<br />
+              </h3>
+              <h3 class="mobile-project-title project-title">
+                Martin Fisher Photography
+              </h3>
+
+              <div class="text-box">
+                <p class="project-p">
+                  Fully responsive Wordpress website. Optimized with custom CSS
+                  and HTML to display for high res images, blogs, and more.
+                </p>
+              </div>
+              <div class="tech">
+                <p class="tech-p">Wordpress</p>
+                <p class="tech-p">HTML</p>
+                <p class="tech-p">CSS</p>
+              </div>
+              <div class="project-link">
+                <a href="https://github.com" target="blank">
+                  <img
+                    src="./resources/github-mark.svg"
+                    alt=""
+                    class="project-icon icon-link"
+                  />
+                </a>
+                <a href="https://github.com" target="blank">
+                  <img
+                    src="./resources/linka.svg"
+                    alt=""
+                    class="project-icon icon-link"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="skills section">
+          <h1 class="hidden">My Expertise()</h1>
+          <div class="skills-container hidden">
+            <div class="flex-skill hidden">
+              <div class="skill-title">💾 Software Dev:\</div>
+              <div class="skill-description">
+                As an aspiring Software Developer I put focus in
+                problem-solving, organization, and team work. My interests in
+                Data Structures, Algorithms, and Databases make me excited to
+                build inovative software.
+              </div>
+            </div>
+            <div class="flex-skill hidden">
+              <div class="skill-title">💻 Frontend Dev:\</div>
+              <div class="skill-description">
+                Every webapp needs a great frontend to pair. Through HTML, CSS,
+                and Javascript, I enjoy the creative process of briging a
+                thoughtful and apporpriate frontend to web applications.
+              </div>
+            </div>
+            <div class="flex-skill hidden">
+              <div class="skill-title">⚙️ Languages:\</div>
+              <div class="langs hidden">
+                <div class="skill-lang">C++</div>
+              </div>
+              <div class="langs hidden">
+                <div class="skill-lang">Javascript</div>
+              </div>
+              <div class="langs hidden">
+                <div class="skill-lang">Python</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="form section hidden">
+          <h1>Contact()</h1>
+          <form id="form-id">
+            <input
+              name="from_name"
+              type="text"
+              class="feedback-input"
+              placeholder="Name"
+            />
+            <input
+              name="reply_to"
+              type="text"
+              class="feedback-input"
+              placeholder="Email"
+            />
+            <textarea
+              name="message"
+              class="feedback-input"
+              placeholder="Comment"
+            ></textarea>
+            <input class="submit-button" type="submit" value="SUBMIT" />
+          </form>
+        </section>
+        <div class="footer hover hidden">
+          Website Designed and Built by Justin Fisher
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("px4JXBJPvHPaCx-28");
+      })();
+    </script>
+    <script src="general.js"></script>
+  </body>
+</html>
