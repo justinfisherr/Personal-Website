@@ -111,15 +111,6 @@ function gameOver(elapsedTime = 30) {
   const result = getWpm(elapsedTime);
   document.querySelector(".info").innerHTML = `WPM: ${result}`;
 }
-typeContainer.addEventListener("click", () => {
-  document.querySelector(".invisible-input").focus();
-});
-document.querySelector(".invisible-input").addEventListener("focus", () => {
-  document.querySelector(".cursor").classList.add("show-cursor");
-});
-document.querySelector(".invisible-input").addEventListener("focusout", () => {
-  document.querySelector(".cursor").classList.remove("show-cursor");
-});
 typeContainer.addEventListener("focusout", () => {
   newGame();
 });
