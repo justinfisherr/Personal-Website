@@ -767,8 +767,8 @@ textarea {
 }
 
 @media (max-width: 900px) {
-  .cursor {
-    display: block;
+  .show-cursor {
+    display: inline-block;
   }
   .tech,
   .tech-r {
@@ -871,6 +871,12 @@ textarea {
     top: 40px;
     opacity: 0;
     z-index: 2;
+    margin: 0 5px;
+    line-height: 35px;
+    font-size: 25px;
+    font-family: "JetBrains Mono", monospace;
+    padding-top: 10px;
+    word-spacing: -5px;
   }
 }
 

@@ -74,6 +74,8 @@ function formatWord(word) {
 }
 
 function newGame() {
+  if (window.innerWidth < 900)
+    document.querySelector(".invisible-input").value = "";
   clearInterval(window.timer);
   document.querySelector(".info").innerHTML = "60";
   const wordArray = additional ? additionalWords.split(" ") : words.split(" ");
@@ -111,10 +113,19 @@ function gameOver(elapsedTime = 30) {
   const result = getWpm(elapsedTime);
   document.querySelector(".info").innerHTML = `WPM: ${result}`;
 }
-typeContainer.addEventListener("focusout", () => {
-  const mobile = window.innerWidth < 900;
-  if (!mobile) newGame();
+const invsibleInput = document.querySelector(".invisible-input");
+invsibleInput.addEventListener("focus", () => {
+  document.querySelector(".cursor").classList.add("show-cursor");
+  invsibleInput.selectionStart = invsibleInput.value.length;
 });
+invsibleInput.addEventListener("focusout", () => {
+  document.querySelector(".cursor").classList.remove("show-cursor");
+});
+
+typeContainer.addEventListener("focusout", () => {
+  newGame();
+});
+
 removed = false;
 typeContainer.addEventListener("keydown", (e) => {
   if (!removed) {
