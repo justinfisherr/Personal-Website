@@ -68,7 +68,7 @@ submitButton.addEventListener("click", (e) => {
   ) {
     submitButton.value = "Thank you!";
     submitButton.classList.add("success-submit");
-    emailjs.sendForm("service_2j9lp4n", "form-template", "#form-id");
+    emailjs.sendForm("service_6a6ekco", "form-template", "#form-id");
     form.reset();
   }
 });
