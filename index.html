@@ -317,23 +317,26 @@
         <section class="form section hidden">
           <h1>Contact()</h1>
           <div class = "contact-email">justinthedev@outlook.com</div>
-          <form id="form-id">
+          <form id="form-id" class = "form-container">
             <input
               name="from_name"
               type="text"
-              class="feedback-input"
+              class="feedback-input name-input"
               placeholder="Name"
+              autocomplete="off"
             />
             <input
               name="reply_to"
               type="text"
-              class="feedback-input"
+              class="feedback-input email-input"
               placeholder="Email"
+              autocomplete="off"
             />
             <textarea
               name="message"
-              class="feedback-input"
+              class="feedback-input message-input"
               placeholder="Comment"
+              autocomplete="off"
             ></textarea>
             <input class="submit-button" type="submit" value="SUBMIT" />
           </form>

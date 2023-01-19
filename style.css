@@ -482,6 +482,7 @@ p {
 .wrong {
   color: rgb(192, 61, 61);
 }
+
 .about-me {
   width: fit-content;
   margin-top: 10px;
@@ -589,6 +590,9 @@ form {
   background-color: var(--color-000);
   color: var(--color-300);
 }
+.input-error {
+  border: 1px solid rgb(192, 61, 61);
+}
 
 input::placeholder,
 textarea::placeholder {
@@ -626,6 +630,31 @@ textarea {
 [type="submit"]:hover {
   background: rgba(0, 229, 255, 0.3);
 }
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.success-submit {
+  color: #14ff43;
+  border: 1px solid #14ff43;
+  pointer-events: none;
+  cursor: default;
+  animation: shake 0.5s forwards ease-in-out;
+}
+.success-submit:hover {
+  background-color: var(--color-100);
+}
+
 .footer {
   font-size: 15px;
   cursor: pointer;

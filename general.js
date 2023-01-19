@@ -32,10 +32,45 @@ contactButton.addEventListener("click", () => {
   hamburgerWrapper.click();
   contact.scrollIntoView({ behavior: "smooth" });
 });
+
+const validateEmail = (email) => {
+  const rules =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return rules.test(email);
+};
+const nameI = document.querySelector(".name-input");
+const email = document.querySelector(".email-input");
+const message = document.querySelector(".message-input");
+nameI.addEventListener("focus", () => {
+  nameI.classList.remove("input-error");
+});
+email.addEventListener("focus", () => {
+  email.classList.remove("input-error");
+});
+message.addEventListener("focus", () => {
+  message.classList.remove("input-error");
+});
+
 submitButton.addEventListener("click", (e) => {
-  emailjs.sendForm("service_2j9lp4n", "form-template", "#form-id");
   e.preventDefault();
-  form.reset();
+  if (nameI.value === "") nameI.classList.add("input-error");
+  else nameI.classList.remove("input-error");
+  if (email.value === "" || !validateEmail(email.value))
+    email.classList.add("input-error");
+  else email.classList.remove("input-error");
+  if (message.value === "") message.classList.add("input-error");
+  else message.classList.remove("input-error");
+
+  if (
+    !nameI.classList.contains("input-error") &&
+    !email.classList.contains("input-error") &&
+    !message.classList.contains("input-error")
+  ) {
+    submitButton.value = "Thank you!";
+    submitButton.classList.add("success-submit");
+    emailjs.sendForm("service_2j9lp4n", "form-template", "#form-id");
+    form.reset();
+  }
 });
 resumeButton.addEventListener("click", () => {
   window.open("./resources/Justin Fisher Resume.docx.pdf");
