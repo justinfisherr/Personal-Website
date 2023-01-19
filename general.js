@@ -88,7 +88,7 @@ document.querySelectorAll(".nav-link")[2].addEventListener("click", () => {
   window.open("mailto:justinthedev@outlook.com");
 });
 document.querySelector(".footer").addEventListener("click", () => {
-  window.open("https://github.com/justinfisherrr");
+  window.open("https://github.com/justinfisherrr/Personal-Website");
 });
 
 let active = false;

@@ -40,7 +40,20 @@ h1 {
   font-size: 30px;
 }
 .invisible-input {
-  display: none;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  left: 0;
+  top: 40px;
+  opacity: 0;
+  z-index: 2;
+  margin: 0 5px;
+  line-height: 35px;
+  font-size: 25px;
+  font-family: "JetBrains Mono", monospace;
+  padding-top: 10px;
+  word-spacing: -5px;
 }
 
 h3 {
@@ -472,6 +485,9 @@ p {
   left: 9px;
   animation: blink 0.5s infinite;
 }
+.show-cursor {
+  display: inline-block;
+}
 
 .type-box-container:focus .cursor {
   display: block;
@@ -796,9 +812,6 @@ textarea {
 }
 
 @media (max-width: 900px) {
-  .show-cursor {
-    display: inline-block;
-  }
   .tech,
   .tech-r {
     justify-content: start;
@@ -891,7 +904,7 @@ textarea {
     padding-inline: 50px;
     overflow: hidden;
   }
-  .invisible-input {
+  /* .invisible-input {
     display: inline-block;
     position: absolute;
     width: 100%;
@@ -906,7 +919,7 @@ textarea {
     font-family: "JetBrains Mono", monospace;
     padding-top: 10px;
     word-spacing: -5px;
-  }
+  } */
 }
 
 @media (max-width: 700px) {
