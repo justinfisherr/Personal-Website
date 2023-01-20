@@ -78,6 +78,12 @@ resumeButton.addEventListener("click", () => {
 document.querySelector(".download-button").addEventListener("click", () => {
   window.open("./resources/Justin Fisher Resume.docx.pdf");
 });
+document.querySelectorAll(".mobile-social")[0].addEventListener("click", () => {
+  window.open("https://github.com/justinfisherrr");
+});
+document.querySelectorAll(".mobile-social")[1].addEventListener("click", () => {
+  window.open("https://linkedin.com/in/justinthedev");
+});
 document.querySelectorAll(".nav-link")[0].addEventListener("click", () => {
   window.open("https://github.com/justinfisherrr");
 });
