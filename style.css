@@ -272,8 +272,10 @@ p {
 .subtext {
   font-size: 14px;
   font-weight: 500;
-  font-style: italic;
   color: var(--color-300);
+}
+.location {
+  font-style: italic;
 }
 
 .timeline-item {
