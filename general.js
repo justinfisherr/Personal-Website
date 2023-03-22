@@ -73,10 +73,10 @@ submitButton.addEventListener("click", (e) => {
   }
 });
 resumeButton.addEventListener("click", () => {
-  window.open("./resources/Justin Fisher Resume.docx.pdf");
+  window.open("./resources/Justin Fisher Resume.pdf");
 });
 document.querySelector(".download-button").addEventListener("click", () => {
-  window.open("./resources/Justin Fisher Resume.docx.pdf");
+  window.open("./resources/Justin Fisher Resume.pdf");
 });
 document.querySelectorAll(".mobile-social")[0].addEventListener("click", () => {
   window.open("https://github.com/justinfisherrr");
