@@ -1,7 +1,7 @@
 const words =
-  "Hello, I'm Justin! I'm a Backend Software Engineer with a love for problem solving and project creation. I'm currently attending Cal State Long Beach pursuing a bachelor's in Computer Science. Recently, my team won BeachHacks 7.0, a hackathon with over 100 particpants!";
+  "Hello, I'm Justin! I'm a Backend Software Engineer with a love for problem-solving and project creation. I'm currently attending Cal State Long Beach pursuing a bachelor's in Computer Science. Recently, my team won BeachHacks 7.0, a hackathon with over 100 participants!";
 const additionalWords =
-  "Outside of programming I enjoy learning languages and playing the piano. I've been studying Japanese for the past three years and can speak and read in the language. My goal is to become a digital nomad and travel! By the way, my WPM is 113.";
+  "Outside of programming, I enjoy learning languages and playing the piano. I've been studying Japanese for the past three years and can speak and read in the language. My goal is to become a digital nomad and travel! By the way, my WPM is 113.";
 let additional = false;
 
 const gameTime = 60;
