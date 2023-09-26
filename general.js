@@ -33,6 +33,10 @@ contactButton.addEventListener("click", () => {
   contact.scrollIntoView({ behavior: "smooth" });
 });
 
+window.onload = () => {
+  window.scrollTo(0, 0);
+};
+
 const validateEmail = (email) => {
   const rules =
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
